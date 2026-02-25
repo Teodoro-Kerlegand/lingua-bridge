@@ -1,0 +1,49 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* sombra al hacer scroll */
+.navbar.scrolled {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CONTENEDOR DE LINKS */
+.navbar-links {
+  display: flex;
+  gap: 42px;              /* 👈 ESTO arregla que se peguen */
+}
+
+/* LINKS LIMPIOS (blindados) */
+.navbar-links a {
+  all: unset;             /* 👈 elimina estilos globales */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  font-family: inherit;
+  position: relative;
+}
+
+/* underline rojo solo al hover */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #e63946;
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}

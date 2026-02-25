@@ -1,0 +1,130 @@
+/* ================================== */
+/*            HERO SECTION            */
+/* ================================== */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 0 20px 20px;
+  margin-top: -110px; /* pulls hero closer to navbar */
+}
+
+/* ---------- Logo + Banner ---------- */
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.hero-logo {
+  margin-top: 0px;
+}
+
+.hero-logo img {
+  max-width: 340px;
+  margin: 0 auto -90px auto; /* connects logo & banner */
+}
+
+.hero-banner {
+  max-width: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero-banner img {
+  width: 100%;
+  display: block;
+}
+
+/* ---------- Text ---------- */
+
+.hero-content {
+  max-width: 750px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.hero h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0 8px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 12px;
+  line-height: 1.6;
+}
+
+/* ---------- Buttons ---------- */
+
+.buttons {
+  margin-top: 18px;
+  margin-bottom: 24px;   /* 👈 ADD THIS */
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-trust {
+  margin-top: 50px;   /* pushes it away from buttons */
+  font-size: 14px;
+  opacity: 0.65;
+  letter-spacing: 0.3px;
+}
+
+/* Make primary CTA dominant */
+.btn-red {
+  padding: 18px 40px;
+  font-size: 17px;
+  box-shadow: 0 8px 18px rgba(230, 57, 70, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+}
+
+/* ================================== */
+/*              MOBILE                */
+/* ================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    margin-top: -80px;
+    padding: 0 16px 30px;
+  }
+
+  .hero-logo img {
+    max-width: 280px;
+    margin-bottom: -80px;
+  }
+
+  .hero-banner {
+    max-width: 85%;
+    border-radius: 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    margin: 8px 0 6px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    gap: 14px;
+  }
+
+}

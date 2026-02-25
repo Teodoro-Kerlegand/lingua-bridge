@@ -1,9 +1,15 @@
+import Hero from "../components/Hero";
+import HowItWorks from "../components/HowItWorks";
+import Pricing from "../components/Pricing";
+import CTA from "../components/CTA";
+
 export default function Home() {
   return (
-    <main style={{ padding: "3rem", textAlign: "center" }}>
-      <h1>LinguaBridge</h1>
-      <p>Learn Spanish with teachers from Mexico 🇲🇽</p>
-      <button>Book a demo class</button>
-    </main>
+    <>
+      <Hero />
+      <HowItWorks />
+      <Pricing />
+      <CTA />
+    </>
   );
 }

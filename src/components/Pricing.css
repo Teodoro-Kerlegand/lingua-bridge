@@ -1,0 +1,140 @@
+.pricing-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.pricing-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.price-card {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+/* HEADER */
+.price-header {
+  color: #ffffff;
+  padding: 30px 25px 50px;
+  border-bottom-left-radius: 120px;
+}
+
+.price-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.price-header p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.price-header span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* COLORS */
+.price-header.red {
+  background: #b71c1c;
+}
+
+.price-header.green {
+  background: #2e7d32;
+}
+
+.price-header.blue {
+  background: #0b3c78;
+}
+
+/* BODY */
+.price-body {
+  padding: 30px 25px 35px;
+}
+
+.price-highlight {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.price-highlight .brand {
+  color: #c62828;
+  font-weight: 700;
+}
+
+/* LIST */
+.price-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.price-body li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.price-body li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0b3c78;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.price-footer {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #e63946;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+.price-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.18);
+}
+@media (max-width: 900px) {
+  .pricing-grid {
+    gap: 40px;
+  }
+
+  .price-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
